@@ -65,9 +65,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Read One-to-One basics & try with this code as you want
 
-Go throw *laravel documentation* & many more blog
+Go throw <h2>laravel documentation</h2> & many more blog
 
-first you need to clone this and save *.env.example as .env* and setup your environment or just change the database configure
+first you need to clone this and save <h2>.env.example as .env</h2> and setup your environment or just change the database configure
 
 ```sh
 - DB_CONNECTION=mysql
@@ -86,7 +86,7 @@ php artisan migrate
 php artisan serve
 ```
 
-if you have *Postman*/any software like that please import One-to-One.postman_collection.json file either call
+if you have <h2>Postman</h2>/any software like that please import One-to-One.postman_collection.json file either call
 ```sh
 - {url-of-your-app}/api/users                 --method : get     // get all user list with profile
 - {url-of-your-app}/api/users/{user}          --method : get     // get one user by id with profile
