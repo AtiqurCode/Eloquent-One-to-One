@@ -2,24 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Profile;
-use App\Models\User;
+use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    public function profile(Profile $profile){
-        $profi = $profile->load('user');
-        return response()->json([
-            'data' => $profi
-        ], 200);
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Profile $profile)
+    {
+        return response()->json($profile);
     }
 
-    public function user(User $user)
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Profile $profile)
     {
-        $user = $user->load('profile');
-        return response->json([
-            'ddata' => $user
+        $profile->update($request->all());
+
+        return response()->json([
+            'status' => 'success',
+            'data' => $profile,
         ], 200);
     }
 }

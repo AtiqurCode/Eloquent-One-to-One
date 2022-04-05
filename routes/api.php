@@ -25,3 +25,7 @@ Route::post('users', [UserController::class, 'store']);
 Route::get('users/{user}', [UserController::class, 'show']);
 Route::put('users/{user}', [UserController::class, 'update']);
 Route::delete('users/{user}', [UserController::class, 'destroy']);
+
+Route::post('profile', [ProfileController::class, 'store']);
+Route::get('profile/{profile}', [ProfileController::class, 'show']);
+Route::put('profile/{profile}', [ProfileController::class, 'update']);
