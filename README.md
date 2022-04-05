@@ -78,12 +78,12 @@ first you need to clone this and save *.env.example as .env* and setup your envi
 - DB_PASSWORD=your-database-password(if have)
 ```
 
-Now just run on terminal
+Now just run some command on terminal
 
 ```sh
-- composer install
-- php artisan migrate
-- php artisan serve
+composer install
+php artisan migrate
+php artisan serve
 ```
 
 if you have *Postman*/any software like that please import One-to-One.postman_collection.json file either call
