@@ -112,7 +112,8 @@ Profile Model are relation with belongsTo
         return $this->belongsTo(User::class); 
     }
 
-    // You can save return $this->belongsTo(User::class, 'user_id'); relation column name if you didn't follow the convention 
+    // You can save return $this->belongsTo(User::class, 'user_id');
+    relation column name if you didn't follow the convention 
 ```
 
 And controller code are depend's on condition what I need. So you can got throw the controller method.
