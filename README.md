@@ -92,8 +92,8 @@ As I have said this is One to One relationship. //Imagine part
 - Example3: Office can have one employee profile
 
 So I have just created Two model
-- **User
-- **Profile
+- **User**
+- **Profile**
 
 User Model are relation with hasOne
 
