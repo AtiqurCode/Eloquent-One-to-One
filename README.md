@@ -86,6 +86,35 @@ php artisan migrate
 php artisan serve
 ```
 
+As I have said this is One to One relationship. //Imagine part
+- Example1: A User can have one profile data but can't be multiple
+- Example2: Student can have one ID information
+- Example3: Office can have one employee profile
+
+So I have just created Two model
+- **User
+- **Profile
+
+User Model are relation with hasOne
+
+```sh
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+```
+
+Profile Model are relation with belongsTo
+
+```sh
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+```
+
+And controller code are depend's on condition what I need. So you can got throw the controller method.
+
 if you have **Postman**/any software like that please import One-to-One.postman_collection.json file either call
 ```sh
 - {url-of-your-app}/api/users                 --method : get     // get all user list with profile
