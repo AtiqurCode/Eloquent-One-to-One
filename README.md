@@ -33,9 +33,8 @@ So I have just created Two model
 User Model are relation with hasOne
 
 ```sh
-    public function user()
-    {
-        return $this->belongsTo(User::class);
+    public function profile(){
+        return $this->hasOne(Profile::class);
     }
 ```
 
